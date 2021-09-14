@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "212435639461",
+    "project_id": "find-out-nearest-covid-patient",
+    "storage_bucket": "find-out-nearest-covid-patient.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212435639461:android:d4516aef98e4c97a31814c",
+        "android_client_info": {
+          "package_name": "com.omar.find_out_nearest_covid_patient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212435639461-ig1ru8ua0p7m0of9216f6hl4ov27hsmg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmZAPIqc9JAqm4N6qhzcLi3Bpk6PW-KWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212435639461-ig1ru8ua0p7m0of9216f6hl4ov27hsmg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

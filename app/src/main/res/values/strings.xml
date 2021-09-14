@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Nearest Covid Patient</string>
+
+
+
+    <string-array name="spinner_style">
+        <item>Selected Gender</item>
+        <item> Meal</item>
+        <item>Femeal</item>
+        <item>Others</item>
+
+    </string-array>
+
+</resources>

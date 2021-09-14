@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Find_out_nearest_covid_patient"
