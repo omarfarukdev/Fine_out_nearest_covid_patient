@@ -1,8 +1,10 @@
-package com.omar.find_out_nearest_covid_patient;
+package com.omar.find_out_nearest_covid_patient.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.omar.find_out_nearest_covid_patient.R;
 
 public class MainActivity extends AppCompatActivity {
 

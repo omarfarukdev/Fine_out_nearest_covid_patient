@@ -1,4 +1,4 @@
-package com.omar.find_out_nearest_covid_patient;
+package com.omar.find_out_nearest_covid_patient.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,6 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
+import com.omar.find_out_nearest_covid_patient.R;
 
 import java.util.concurrent.TimeUnit;
 

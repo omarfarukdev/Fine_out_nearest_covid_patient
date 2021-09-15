@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateAccountActivity">
-    <include
+    tools:context=".Activity.CreateAccountActivity">
+   <!-- <include
         layout="@layout/app_bar_layout"
-        android:id="@+id/settings_toolbar"/>
+        android:id="@+id/settings_toolbar"/>-->
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_below="@id/settings_toolbar"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:src="@drawable/profile_image"
@@ -44,27 +43,27 @@
 
     </LinearLayout>
 
+ <EditText
+     android:id="@+id/user_name"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/profile_image"
+     android:layout_marginStart="15dp"
+     android:layout_marginTop="10dp"
+     android:layout_marginEnd="15dp"
+     android:background="@drawable/inputs"
+     android:drawableStart="@drawable/edit_profile"
+     android:hint="username"
+     android:inputType="textMultiLine"
+     android:padding="6dp"
+     android:textAlignment="center"
+     android:textColor="@color/colorPrimaryDark"
+     android:textStyle="bold" />
     <EditText
-        android:id="@+id/set_user_name"
+        android:id="@+id/profile_status"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/profile_image"
-        android:inputType="textMultiLine"
-        android:hint="username"
-        android:textAlignment="center"
-        android:drawableStart="@drawable/edit_profile"
-        android:textColor="@color/colorPrimaryDark"
-        android:textStyle="bold"
-        android:background="@drawable/inputs"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:padding="6dp"/>
-    <EditText
-        android:id="@+id/set_profile_status"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/set_user_name"
+        android:layout_below="@id/user_name"
         android:inputType="textMultiLine"
         android:hint="hey, i am available now."
         android:textAlignment="center"
@@ -80,7 +79,7 @@
         android:id="@+id/nidNumberEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/set_profile_status"
+        android:layout_below="@id/profile_status"
         android:drawableStart="@drawable/edit_status"
         android:textColor="@color/colorPrimaryDark"
         android:inputType="textMultiLine"
@@ -131,7 +130,7 @@
 
 
     <Button
-        android:id="@+id/update_settings_button"
+        android:id="@+id/created_account"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/birthdate"
@@ -140,7 +139,7 @@
         android:layout_marginEnd="15dp"
         android:background="@drawable/buttons"
         android:padding="6dp"
-        android:text="Update"
+        android:text="Create Account"
         android:textAllCaps="false"
         android:textColor="@android:color/background_light"
         android:textSize="20sp" />

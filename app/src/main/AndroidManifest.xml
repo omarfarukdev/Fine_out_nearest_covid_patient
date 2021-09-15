@@ -3,6 +3,27 @@
     package="com.omar.find_out_nearest_covid_patient">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.CAMERA"
+        android:required="true"
+        android:requiredFeature="true"/>
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
 
     <application
         android:allowBackup="true"
@@ -12,13 +33,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Find_out_nearest_covid_patient">
         <activity
-            android:name=".CreateAccountActivity"
+            android:name=".Activity.CreateAccountActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity.MainActivity"
             android:exported="true" />
-        <activity android:name=".PhoneAuthenticationActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".Activity.PhoneAuthenticationActivity" />
+        <activity android:name=".Activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
