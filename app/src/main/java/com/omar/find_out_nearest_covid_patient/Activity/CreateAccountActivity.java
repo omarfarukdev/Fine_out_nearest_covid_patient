@@ -48,7 +48,6 @@ import java.util.Calendar;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class CreateAccountActivity extends AppCompatActivity {
-
     TextView birthdateTv;
     DatePickerDialog.OnDateSetListener mDateListener;
     CircleImageView profileImage;
@@ -137,7 +136,6 @@ public class CreateAccountActivity extends AppCompatActivity {
                 saveImage(imageBitmap);
             }
         });
-
     }
     private void imagePickerTypeBottomSheet() {
         final BottomSheetDialog dialog = new BottomSheetDialog(CreateAccountActivity.this);
@@ -151,7 +149,7 @@ public class CreateAccountActivity extends AppCompatActivity {
         cameraDialogImageBt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 startActivityForResult(intent, 2);
                 dialog.dismiss();
             }

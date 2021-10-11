@@ -1,13 +1,26 @@
 <resources>
     <string name="app_name">Nearest Covid Patient</string>
 
-
-
     <string-array name="spinner_style">
         <item>Selected Gender</item>
-        <item> Meal</item>
-        <item>Femeal</item>
+        <item>Male</item>
+        <item>Female</item>
         <item>Others</item>
+
+    </string-array>
+
+    <string-array name="covid_status_spinner">
+        <item>Selected Status</item>
+        <item>Positive</item>
+        <item>Nagetive</item>
+
+    </string-array>
+    <string-array name="covid_test_status_spinner">
+        <item>Selected Test</item>
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+        <item>Fourth</item>
 
     </string-array>
 
